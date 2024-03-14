@@ -1,0 +1,201 @@
+header, .project:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+}
+nav button, nav a {
+  /* Rounded edges */
+  border-radius: 10px; /* Adjust this value for more or less rounded corners */
+
+  /* Padding and size */
+  padding: 10px 20px; /* Adjust the padding as needed */
+
+  /* Background color */
+  background-color: #e77ae7; /* Example color */
+
+  /* Text styling */
+  color: white; /* Example text color */
+  text-align: center;
+  text-decoration: none; /* For anchor tags */
+
+  /* Optional: Adding some basic transition for hover effects */
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+nav button:hover, nav a:hover {
+  /* Change color on hover, example */
+  background-color: #a70ba7;
+}
+
+.no-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: #556385;
+  text-decoration: none;
+  font-size: 100%;
+}
+
+.no-button:hover {
+  color: #5300fe;
+  text-decoration: underline;
+}
+
+header {
+  height: 60px;
+}
+
+.header-title {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.biggest-box {
+  display: flex;
+  justify-content: center;
+}
+
+.bigger-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 500px;
+}
+
+.box {
+  background-color: #f0f0f5;
+  width: 100px;
+  margin: 10px;
+  flex: 45%;
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px;
+  color: #4d516a
+}
+
+.box img {
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+
+.login-box {
+  background-color: #f0f0f5;
+  width: 100px;
+  height: 330px;
+  margin: 10px;
+  flex: 45%;
+  border-radius: 10px;
+  padding: 10px;
+  color: #4d516a
+}
+
+.bigger-simple-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.simple-box {
+  background-color: #f0f0f5;
+  width: 500px;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  color: #4d516a
+}
+
+
+/* Chat Box Styling */
+#chatpage {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  flex-direction: column;
+}
+
+#chat-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%; 
+  max-width: 800px; 
+  margin: 0 auto;
+  border: 1px solid #ccc; 
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1); 
+}
+
+#chat-box {
+  width: 100%; 
+  height: 500px; 
+  overflow-y: auto;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 20px; 
+}
+
+.chat-message {
+  padding: 8px 15px;
+  border-radius: 20px;
+  margin-bottom: 8px;
+  display: flex;
+  max-width: 80%;
+}
+
+.user-message {
+  background-color: #e77ae7; 
+  border-bottom-right-radius: 0;
+  margin-left: auto; /* Aligns to the right */
+}
+
+.system-message {
+  background-color: #e9ecef; 
+  color: black;
+  border-bottom-left-radius: 0;
+  margin-right: auto; 
+}
+
+#message-input-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; 
+}
+
+#user-input {
+  flex-grow: 1;
+  border-radius: 15px;
+  padding: 8px 15px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+
+#send-button {
+  background-color: #e77ae7;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+#send-button:hover {
+  background-color: #a70ba7;
+}
+
+#personality-select {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px 10px;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+}

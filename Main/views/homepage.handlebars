@@ -1,0 +1,23 @@
+<div class="row biggest-box">
+  <div class="bigger-box">
+    <div class="box">
+      <center>Welcome to <b>PersonaPal</b>, the website where you can become pen pals with one of your favorite characters. Login and choose between one of our 4 personalities to start your customized <i>PersonaPal experience!</i></center>
+    </div>
+  </div>
+</div>
+<div class="biggest-box row">
+  <div class="bigger-box">
+    {{#each personas as |persona| }}
+    <div class="box">
+      <img src="/images/{{persona.filename}}">
+      <h3>
+        <!-- Call helper function with triple brackets to render the emoji span as HTML -->
+        <a href="/persona/{{persona.id}}">{{persona.name}}</a>
+      </h3>
+      <p>
+        {{persona.short_description}}
+      </p>
+    </div>
+    {{/each}}
+  </div>
+</div>
